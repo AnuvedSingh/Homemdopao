@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">HDP Delivery</string>
+    <string name="str_btn_find">Find</string>
+    <string name="hnt_et_location">Enter location</string>
+    <string name="hint_search">search</string>
+    <string-array name="days_entry">
+        <item>Last 30 Days</item>
+        <item>Last 60 Days</item>
+        <item>Last 90 Days</item>
+    </string-array>
+    <string-array name="city_location">
+        <item>Indore</item>
+        <item>Rajwada</item>
+        <item>Khjrana</item>
+        <item>Old Palasia</item>
+        <item>Palasia</item>
+        <item>Regal</item>
+        <item>High Court</item>
+        <item>Madhumilan</item>
+        <item>Regnal Park</item>
+        <item>Khajrana Ganesh Mandir</item>
+        <item>Sarafa Bazaar</item>
+        <item>Shri Omkareshwar Jyotirlinga</item>
+        <item>Kanch Mandir</item>
+        <item>Treasure Island Mall</item>
+        <item>Pipliyapala Regional Park Indore</item>
+        <item>Annapurna Temple</item>
+        <item>Bada Ganpati</item>
+        <item>Gomatgiri</item>
+        <item>Patalpani Waterfall</item>
+        <item>Lal Bagh Palace</item>
+        <item>ISKCON Indore</item>
+        <item>Maa Vaishno Daam</item>
+        <item>Bijasen Mata Temple</item>
+        <item>Ralamandal Wildlife Sanctuary</item>
+        <item>Tincha Fall</item>
+        <item>Lal Bagh Palace</item>
+        <item>Holkar Cricket Stadium</item>
+        <item>Lal Bagh Palace</item>
+        <item>C21 Malls</item>
+        <item>Krishnapura Chhatris</item>
+        <item>Meghdoot Upvan</item>
+        <item>Indore Central Mall</item>
+        <item>Janapav</item>
+        <item>Nehru Park</item>
+        <item>Maharana pratap swuare</item>
+        <item>Geetabhavan</item>
+        <item>Anand Bazar</item>
+        <item>Tilak nagar</item>
+
+
+    </string-array>
+    <string name="app_id">AIzaSyCJ_J7smRJf-tDnKcNSxqxSEGfLQIo7DM4</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

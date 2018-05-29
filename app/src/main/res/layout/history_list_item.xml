@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:descendantFocusability="blocksDescendants">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/date_header_tv"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:textColor="@color/White"
+    android:background="@drawable/dialog_bg"
+    android:textStyle="bold|italic"
+   />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:background="@color/White">
+
+    <LinearLayout
+        android:id="@+id/orderid"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:hint="Order Id:"
+            />
+        <TextView
+            android:id="@+id/orderid_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:hint="order id"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quantityll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:hint="Quantity :"
+            />
+
+
+
+        <TextView
+            android:id="@+id/quantity_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/green"
+            android:hint="status:"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.6"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/customerll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/customer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:hint="Customer Name :"
+            />
+
+
+
+        <TextView
+            android:id="@+id/cusromer_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/green"
+            android:hint="status:"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.6"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/statusll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:hint="Meassage :"
+            />
+
+
+
+        <TextView
+            android:id="@+id/message_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/green"
+            android:hint=""
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.6"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/readmorell"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/readmore_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/green"
+            android:hint="Read More"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.6"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+<!--<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="0.15">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iconproducthistory"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:src="@drawable/iconproduct"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/productnamestatichistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_toRightOf="@+id/iconproducthistory"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:hint="Product Name"
+            />
+
+        <TextView
+            android:id="@+id/quantitystatichistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productnamestatichistory"
+            android:layout_toRightOf="@+id/iconproducthistory"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:hint="Quantity:"
+            />
+        <TextView
+            android:id="@+id/statusstatichistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quantitystatichistory"
+            android:layout_toRightOf="@+id/iconproducthistory"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:hint="Status :"
+            />
+
+        <TextView
+            android:id="@+id/productnamehistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:hint="Product Name:"
+            android:layout_alignBaseline="@+id/productnamestatichistory"
+            android:layout_alignBottom="@+id/productnamestatichistory"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="51dp"
+            android:layout_marginEnd="51dp" />
+        <TextView
+            android:id="@+id/quantityhistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productnamehistory"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:hint="quantity:"
+            android:layout_alignLeft="@+id/productnamehistory"
+            android:layout_alignStart="@+id/productnamehistory" />
+
+
+
+        &lt;!&ndash;<CheckBox&ndash;&gt;
+        &lt;!&ndash;android:id="@+id/checkboxhistory"&ndash;&gt;
+        &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+        &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+        &lt;!&ndash;android:layout_marginRight="15dp"&ndash;&gt;
+        &lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;
+        &lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;
+        &lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;
+        &lt;!&ndash;android:layout_marginEnd="15dp" />&ndash;&gt;
+        <TextView
+            android:id="@+id/complain_statushistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/green"
+            android:hint="status:"
+            android:layout_alignLeft="@+id/quantityhistory"
+            android:layout_alignStart="@+id/quantityhistory"
+            android:layout_below="@+id/quantityhistory"
+            android:layout_toRightOf="@+id/quantityhistory"/>
+        &lt;!&ndash;<TextView
+            android:id="@+id/complain_statushistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:hint="status:"
+            android:layout_below="@+id/quantityhistory"
+            android:layout_alignRight="@+id/quantityhistory"
+            android:layout_alignEnd="@+id/quantityhistory" />&ndash;&gt;
+
+    </RelativeLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.85">
+        <TextView
+            android:id="@+id/comment_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="75dp">
+    <TextView
+        android:id="@+id/comment_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+    </LinearLayout>-->
+</LinearLayout>

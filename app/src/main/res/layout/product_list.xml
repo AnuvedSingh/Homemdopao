@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentStart="true">
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Image"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="17sp"
+
+                android:layout_marginBottom="0dp"
+                android:textColor="#fff"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+            </View>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:text="Name"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="0dp"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+            </View>
+
+            <TextView
+                android:id="@+id/q"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:text="Quantity"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="0dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+   <!-- <ListView
+        android:id="@+id/products"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        ></ListView>-->
+
+</LinearLayout>

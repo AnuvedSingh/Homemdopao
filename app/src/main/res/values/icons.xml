@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_unlock_alt">&#xf13e;</string>
+    <string name="fa_home">&#xf015;</string>
+    <string name="fa_history">&#xf1da;</string>
+    <string name="fa_sign_out">&#xf08b;</string>
+    <string name="fa_comments">&#xf086;</string>
+    <string name="fa_back">&#xf177;</string>
+    <string name="fa_cal">&#xf073;</string>
+    <string name="fa_nav">&#xf0c9;</string>
+</resources>

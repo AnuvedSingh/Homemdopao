@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.example.asus.homemdopao"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    useLibrary 'org.apache.http.legacy'
+    buildTypes {
+        release {
+            multiDexEnabled true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    implementation('org.apache.httpcomponents:httpmime:4.3') {
+        exclude module: "httpclient"
+    }
+    //compile 'com.android.support:appcompat-v7:23.4.0'
+    // compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.norbsoft.typefacehelper:library:0.9.0'
+    compile 'com.koushikdutta.ion:ion:2.+'
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    compile 'com.google.maps.android:android-maps-utils:0.3.+'
+    compile 'com.android.support:support-v4:25.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.android.gms:play-services-maps:9.6.1'
+    compile 'com.google.android.gms:play-services-places:9.6.1'
+    compile 'com.google.android.gms:play-services-location:9.6.1'
+   // compile 'org.apache.httpcomponents:httpcore:4.4.1'
+    // compile 'org.apache.httpcomponents:httpclient:4.4'
+    compile group: 'cz.msebera.android', name: 'httpclient', version: '4.4.1.1'
+    // compile 'org.apache.httpcomponents:httpclient:4.4'
+    // compile 'org.apache.httpcomponents:httpclient:4.5'
+    // compile 'com.google.android.gms:play-services-location:8.4.0'
+    testCompile 'junit:junit:4.12'
+}
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+
+        android:dividerPadding="5dp"
+        android:divider="#ccc"
+        android:layout_alignParentStart="true">
+    <TableRow>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:gravity="start|center">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/iconproduct"
+            android:layout_alignParentLeft="true"
+
+            />
+        </LinearLayout>
+    <TextView
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="Name"
+        android:layout_gravity="center_horizontal"
+        android:gravity="start|center"
+        android:textSize="17sp"
+        android:id="@+id/productNameTxt"
+
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/prdct_qty"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:textSize="17sp"
+        android:text="Qty"
+
+        android:textColor="#000"
+
+        android:gravity="center"
+
+        android:layout_height="match_parent" />
+</TableRow>
+    </TableLayout>
+</LinearLayout>

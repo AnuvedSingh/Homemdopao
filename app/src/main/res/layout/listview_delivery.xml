@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+
+        <LinearLayout
+
+    android:layout_weight="1.5"
+    android:layout_width="0dp"
+    android:padding="4dp"
+    android:layout_height="wrap_content"
+ android:orientation="vertical"
+    >
+            <LinearLayout
+                android:id="@+id/orderid"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/order"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/Brown"
+                    android:hint="NrEncomenda:"
+                    />
+                <TextView
+                    android:id="@+id/orderidtxt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+
+                    android:textSize="15dp"
+                    android:textColor="@color/Brown"
+                    android:hint="NrEncomenda"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/statusll"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/statusstatic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/Brown"
+                android:hint="Estado:"
+                />
+
+
+
+            <TextView
+                android:id="@+id/complain_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/green"
+                android:hint="Estado:"
+
+               android:layout_weight="0.5"/>
+                </LinearLayout>
+</LinearLayout>
+
+
+       <!--
+
+        <TextView
+            android:id="@+id/statusstatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quantitystatic"
+            android:layout_toRightOf="@+id/iconproduct"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:hint="Status :"
+            />
+
+
+
+        <TextView
+        android:id="@+id/complain_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:textColor="@color/green"
+            android:hint="status:"
+
+            android:layout_below="@+id/quantity"
+            android:layout_toRightOf="@+id/statusstatic"/>-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="end">
+        <CheckBox
+            android:id="@+id/checkboxcomplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+          />
+    </LinearLayout>
+</LinearLayout>
+    </RelativeLayout>
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginLeft="70dp"
+         >
+         <RadioGroup
+             android:id="@+id/radiostatus"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <RadioButton
+                 android:id="@+id/progress"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Progress"
+                 android:checked="true"
+                 android:onClick="onRadioButtonClicked" />
+
+             <RadioButton
+                 android:id="@+id/completed"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Completed"
+                 android:onClick="onRadioButtonClicked" />
+
+         </RadioGroup>-->
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+    <CheckBox
+        android:id="@+id/checkboxprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:text="Progress"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+        <CheckBox
+            android:id="@+id/checkboxComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:textColor="@color/Brown"
+            android:text="Completed"
+            />
+
+    </LinearLayout>
+ -->
+
+</LinearLayout>

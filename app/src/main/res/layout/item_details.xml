@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/customactionbar">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- <TableLayout
+                 android:id="@+id/table"
+                 android:layout_below="@+id/toolbar"
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentLeft="true"
+                 android:padding="10dp"
+                 android:layout_margin="10dp"
+                 android:layout_gravity="center_vertical"
+                 android:gravity="center_vertical"
+                 android:background="@color/colorPrimary"
+                 android:layout_alignParentStart="true">
+                 <TableRow>
+
+                     <TextView
+                         android:layout_width="0dp"
+                         android:layout_weight="0.5"
+                         android:layout_height="wrap_content"
+                         android:text="Image"
+                         android:layout_gravity="start|center"
+                         android:gravity="start|center"
+                         android:textSize="17sp"
+
+                         android:layout_marginBottom="0dp"
+                         android:textColor="#fff"/>
+
+
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="#ffffff">
+                     </View>
+
+                     <TextView
+                         android:id="@+id/name"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:textSize="17sp"
+                         android:text="Name"
+
+                         android:textColor="#fff"
+                         android:layout_gravity="center_horizontal"
+                         android:gravity="start|center"
+                         android:layout_marginBottom="0dp"
+                         android:layout_height="wrap_content" />
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="#ffffff">
+                     </View>
+
+                     <TextView
+                         android:id="@+id/qty"
+                         android:layout_width="0dp"
+                         android:layout_weight="0.5"
+                         android:textSize="17sp"
+                         android:text="Quantity"
+
+                         android:textColor="#fff"
+
+                         android:gravity="end|center"
+                         android:layout_marginBottom="0dp"
+                         android:layout_height="wrap_content" />
+                 </TableRow>
+             </TableLayout>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="DETALHE ENCOMENDA"
+                    android:textAllCaps="true"
+                    android:textColor="@color/Brown"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/toolbar"
+                android:layout_margin="5dp"
+                android:background="@color/White">
+                <!--  <ScrollView
+                  android:id="@+id/scrollojt"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:fillViewport="true">-->
+                <ListView
+
+                    android:id="@+id/products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/White"
+                    android:divider="@null"
+                    android:dividerHeight="0dp">
+
+                </ListView>
+                <!-- </ScrollView>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.08"
+                android:background="@color/lightgrey">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/staticorderdelivdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Data Entrega Encomenda -"
+
+                        android:textColor="@color/Black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/orderdeliverydate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/staticorderdelivdate"
+                        android:text="Data Entrega Encomenda"
+                        android:textColor="@color/Black"
+
+                        android:textSize="13dp" />
+
+                    <!--  <TextView
+                          android:id="@+id/staticiproductname"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Product Name -"
+                          android:textSize="13dp"
+
+                          android:textColor="@color/Black"
+                          android:layout_below="@+id/staticorderdelivdate"
+                          android:layout_marginLeft="14dp"
+                          android:layout_marginTop="10dp"
+                          />
+              -->
+                    <!-- <TextView
+                         android:id="@+id/productname"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Product Name"
+
+                         android:textColor="@color/Black"
+                         android:layout_toRightOf="@+id/staticiproductname"
+                         android:layout_below="@+id/staticorderdelivdate"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginLeft="10dp"
+                         android:textSize="13dp" />-->
+
+                    <TextView
+                        android:id="@+id/statiusername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/staticorderdelivdate"
+                        android:layout_marginLeft="14dp"
+
+                        android:layout_marginTop="10dp"
+                        android:text="Nome Cliente - "
+                        android:textColor="@color/Black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderdeliverydate"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/statiusername"
+                        android:text="User Name"
+                        android:textColor="@color/Black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/staticphoneno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_marginLeft="14dp"
+
+                        android:layout_marginTop="10dp"
+                        android:text="Contato Telefónico - "
+                        android:textColor="@color/Black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/phoneno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/staticphoneno"
+                        android:text="Contato Telefónico"
+                        android:textColor="@color/Black"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:id="@+id/call_iv"
+                        android:layout_width="24dp"
+                        android:layout_height="22dp"
+
+                        android:layout_below="@+id/username"
+
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/phoneno"
+
+                        android:src="@drawable/phone_call" />
+
+
+                    <TextView
+                        android:id="@+id/staticorderdelistatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/phoneno"
+                        android:layout_marginLeft="14dp"
+
+                        android:layout_marginTop="10dp"
+                        android:text="Estado Entrega - "
+                        android:textColor="@color/Black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/orderdeliverystatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/phoneno"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/staticorderdelistatus"
+                        android:text="Order Delivery Status"
+                        android:textColor="@color/green"
+                        android:textSize="13dp" />
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/staticaddress"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Address - "-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/Black"-->
+                    <!--android:layout_below="@+id/orderdeliverystatus"-->
+                    <!--android:layout_marginLeft="14dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--/>-->
+                    <!--<TextView-->
+                    <!--android:id="@+id/address"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="address"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/Black"-->
+                    <!--android:layout_toRightOf="@+id/staticaddress"-->
+                    <!--android:layout_below="@+id/orderdeliverystatus"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:textSize="13dp" />-->
+                    <TextView
+                        android:id="@+id/staticemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderdeliverystatus"
+                        android:layout_marginLeft="14dp"
+
+                        android:layout_marginTop="10dp"
+                        android:text="Email - "
+                        android:textColor="@color/Black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderdeliverystatus"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/staticemail"
+                        android:text="Email"
+                        android:textColor="@color/Black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/staticuseraddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/staticemail"
+                        android:layout_marginLeft="14dp"
+
+                        android:layout_marginTop="10dp"
+                        android:text="Morada Cliente - "
+                        android:textColor="@color/Black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/useraddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/email"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/staticuseraddress"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textSize="13dp" />
+                    <!-- <TextView
+                         android:id="@+id/infoText"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="10dp"
+                         android:layout_below="@id/useraddress"/>-->
+
+                    <ImageView
+                        android:id="@+id/mapid"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/useraddress"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/icon_location" />
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/orderuserid"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Order user Id"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/Black"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_below="@id/orderid"-->
+                    <!--android:textSize="13dp" />-->
+                    <!--<TextView-->
+                    <!--android:id="@+id/dliveryboyid"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Delivery Boy Id"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/Black"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_below="@id/orderuserid"-->
+                    <!--android:textSize="13dp" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/userid"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="User Id"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/Black"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_below="@id/dliveryboyid"-->
+                    <!--android:textSize="13dp" />-->
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/quantity"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Quantity"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/Black"-->
+                    <!--android:layout_below="@+id/itemname"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:textSize="13dp" />-->
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/address"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="address"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/Black"-->
+                    <!--android:layout_below="@+id/orderdeliverystatus"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:textSize="13dp" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/productid"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Product Id"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/Black"-->
+                    <!--android:layout_below="@+id/address"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:textSize="13dp" />-->
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/itemqty"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Item Qty"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/Black"-->
+                    <!--android:layout_below="@+id/productname"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:textSize="13dp" />-->
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
