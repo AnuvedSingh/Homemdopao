@@ -166,6 +166,8 @@ public class DashBoardActivity extends AppCompatActivity {
         displayView(Home, b);
 
     }
+
+    //Testing Git
     public void displayView(int id,Bundle b) {
 		/*
 		 * if (isDrawerOpen) { closeDrawer(); }
