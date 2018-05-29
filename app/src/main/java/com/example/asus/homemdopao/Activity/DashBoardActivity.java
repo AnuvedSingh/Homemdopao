@@ -167,7 +167,7 @@ public class DashBoardActivity extends AppCompatActivity {
 
     }
 
-    //Testing Git test for isys
+    //Testing Git test for isys merge
     public void displayView(int id,Bundle b) {
 		/*
 		 * if (isDrawerOpen) { closeDrawer(); }
