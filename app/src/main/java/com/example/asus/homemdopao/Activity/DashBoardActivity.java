@@ -167,7 +167,7 @@ public class DashBoardActivity extends AppCompatActivity {
 
     }
 
-    //Testing Git
+    //Testing Git test
     public void displayView(int id,Bundle b) {
 		/*
 		 * if (isDrawerOpen) { closeDrawer(); }
